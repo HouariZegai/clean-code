@@ -1,6 +1,6 @@
 package com.houarizegai.designpatterns.builder;
 
-public class Main {
+public class BuilderDemo {
     public static void main(String[] args) {
         Person person = new PersonBuilder()
                 .setFirstName("Houari")
