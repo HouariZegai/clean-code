@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3ab7143-8a60-43d7-b6b6-8c9dfdfc0300" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/BuilderDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="c3ab7143-8a60-43d7-b6b6-8c9dfdfc0300" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,25 +21,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="34" />
+          <entry key="java" value="41" />
           <entry key="jpg" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="2650" />
+          <entry key="java" value="3031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2650" />
+          <entry key="JAVA" value="3031" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -50,10 +48,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/BuilderDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/FacadeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="200">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#149#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/ShapeMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +111,6 @@
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/Circle.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/Square.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/ShapeFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/Main.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/singleton/SignleObject.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/singleton/SingletonObject.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/singleton/SingletonDemo.java" />
@@ -102,6 +121,13 @@
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/prototype/ShapeCache.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/prototype/PrototypeDemo.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Shape.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Square.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Circle.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/ShapeMaker.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/FacadeDemo.java" />
       </list>
     </option>
   </component>
@@ -150,7 +176,7 @@
               <item name="Design-Patterns-in-Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -161,7 +187,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540651859415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540653729773" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -169,6 +195,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.houarizegai.designpatterns.facade" />
       <recent name="com.houarizegai.designpatterns.prototype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -189,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FactoryDemo">
+  <component name="RunManager" selected="Application.FacadeDemo">
     <configuration name="BuilderDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.houarizegai.designpatterns.builder.BuilderDemo" />
       <module name="Design-Patterns-in-Java" />
@@ -203,12 +230,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoryDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.houarizegai.designpatterns.factory.FactoryDemo" />
+    <configuration name="FacadeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.houarizegai.designpatterns.facade.FacadeDemo" />
       <module name="Design-Patterns-in-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.houarizegai.designpatterns.factory.*" />
+          <option name="PATTERN" value="com.houarizegai.designpatterns.facade.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,8 +243,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.houarizegai.designpatterns.factory.Main" />
+    <configuration name="FactoryDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.houarizegai.designpatterns.factory.FactoryDemo" />
       <module name="Design-Patterns-in-Java" />
       <extension name="coverage">
         <pattern>
@@ -256,19 +283,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.SingletonDemo" />
       <item itemvalue="Application.PrototypeDemo" />
       <item itemvalue="Application.BuilderDemo" />
       <item itemvalue="Application.FactoryDemo" />
+      <item itemvalue="Application.FacadeDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FacadeDemo" />
         <item itemvalue="Application.FactoryDemo" />
         <item itemvalue="Application.BuilderDemo" />
         <item itemvalue="Application.PrototypeDemo" />
         <item itemvalue="Application.SingletonDemo" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -283,12 +310,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540641910307</updated>
       <workItem from="1540641911745" duration="2901000" />
-      <workItem from="1540648698244" duration="2983000" />
+      <workItem from="1540648698244" duration="4060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5884000" />
+    <option name="totallyTimeSpent" value="6961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -330,6 +357,20 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/FactoryDemo.java</url>
+          <line>3</line>
+          <properties class="com.houarizegai.designpatterns.factory.FactoryDemo" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/Gender.java">
@@ -385,13 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -478,10 +512,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/factory/FactoryDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/builder/BuilderDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/ShapeMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/designpatterns/facade/FacadeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#149#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
