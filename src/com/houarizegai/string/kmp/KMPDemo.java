@@ -2,12 +2,13 @@ package com.houarizegai.string.kmp;
 
 public class KMPDemo {
     public static void main(String[] args) {
-        String text = "aabaabaaa";
-        String pattern = "";
+        String text = "Hello My houar name hou is houarHouari ZEGAI hoari.";
+        String pattern = "houari";
+
         KMP kmp = new  KMP();
-        System.out.print("Input:\t");
-        kmp.printArray(text.toCharArray());
-        System.out.print("Output:\t");
-        kmp.printArray(kmp.computePrefixArray(text.toCharArray()));
+        boolean isFound = kmp.substringSearch(text.toLowerCase().toCharArray(), pattern.toCharArray());
+
+        System.out.println(isFound ? "Found !" : "Not Found !");
+
     }
 }

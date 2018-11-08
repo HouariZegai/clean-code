@@ -1,11 +1,14 @@
 package com.houarizegai.string.kmp;
 /*
 * The Knuth-Morris-Pratt (KMP) String Matching Algorithm
-*
+* (Substring Search)
+* Time Complexity is: O(X + Y) where
+*   X is length of text (text.length) &
+*   Y is length of pattern (pattern.length)
 */
 public class KMP {
 
-    public int[] computePrefixArray(char[] pattern) {
+    private int[] computePrefixArray(char[] pattern) { // Calculate table of prefix
         int[] result = new int[pattern.length];
         result[0] = 0;
         for(int i = 1; i < result.length; i++)
@@ -30,13 +33,42 @@ public class KMP {
         return result;
     }
 
+
+    public boolean substringSearch(char[] text, char[] pattern) {
+
+        int[] prefixArrayOfPattern = computePrefixArray(pattern);
+
+        int indexOfText = 0; // Index of Text table
+        int indexOfPattern = 0; // Index of Pattern table
+
+        while(indexOfText < text.length && indexOfPattern < pattern.length) {
+            if (text[indexOfText] == pattern[indexOfPattern]) {
+                indexOfText++;
+                indexOfPattern++;
+                continue;
+            } else {
+                if(indexOfPattern == 0) {
+                  indexOfText++;
+                } else {
+                    indexOfPattern = prefixArrayOfPattern[indexOfPattern - 1];
+                }
+            }
+
+        }
+
+        return indexOfPattern == pattern.length;
+
+    }
+
+    /* Additional Methods */
+
     public void printArray(int[] array) { // print array of integer
         for(int item : array)
             System.out.print(item + " ");
         System.out.println();
     }
 
-    public void printArray(char[] array) { // print array of integer
+    public void printArray(char[] array) { // print array of char
         for(char item : array)
             System.out.print(item + " ");
         System.out.println();
