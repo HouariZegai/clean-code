@@ -8,6 +8,12 @@ package com.houarizegai.string.kmp;
 */
 public class KMP {
 
+    private final char[] TEXT;
+
+    public KMP(String text) {
+        TEXT = text.toLowerCase().toCharArray();
+    }
+
     private int[] computePrefixArray(char[] pattern) { // Calculate table of prefix
         int[] result = new int[pattern.length];
         result[0] = 0;
@@ -33,16 +39,16 @@ public class KMP {
         return result;
     }
 
-
-    public boolean substringSearch(char[] text, char[] pattern) {
+    public boolean search(String inputPattern) {
+        char[] pattern = inputPattern.toLowerCase().toCharArray();
 
         int[] prefixArrayOfPattern = computePrefixArray(pattern);
 
         int indexOfText = 0; // Index of Text table
         int indexOfPattern = 0; // Index of Pattern table
 
-        while(indexOfText < text.length && indexOfPattern < pattern.length) {
-            if (text[indexOfText] == pattern[indexOfPattern]) {
+        while(indexOfText < TEXT.length && indexOfPattern < pattern.length) {
+            if (TEXT[indexOfText] == pattern[indexOfPattern]) {
                 indexOfText++;
                 indexOfPattern++;
                 continue;
