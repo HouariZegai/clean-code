@@ -1,4 +1,8 @@
 package com.houarizegai.string.kmp;
+
+import java.util.LinkedList;
+import java.util.List;
+
 /*
 * The Knuth-Morris-Pratt (KMP) String Matching Algorithm
 * (Substring Search)
@@ -8,10 +12,21 @@ package com.houarizegai.string.kmp;
 */
 public class KMP {
 
-    private final char[] TEXT;
+    private final String TEXT; // النص الذي يتم البحث فيه
+    private int[] prefixArrayOfPattern; // This table contains numbers indicate the prefix in array of char
+    private boolean isLetterSensitive; // The letters are sensitive ? (default: false => not sensitive)
 
     public KMP(String text) {
-        TEXT = text.toLowerCase().toCharArray();
+        this.TEXT = text;
+    }
+
+    public KMP(String text, boolean isLetterSensitive) {
+        TEXT = text;
+        isLetterSensitive = isLetterSensitive;
+    }
+
+    public void setLetterSensitive(boolean isLetterSensitive) {
+        this.isLetterSensitive = isLetterSensitive;
     }
 
     private int[] computePrefixArray(char[] pattern) { // Calculate table of prefix
@@ -39,19 +54,27 @@ public class KMP {
         return result;
     }
 
-    public boolean search(String inputPattern) {
-        char[] pattern = inputPattern.toLowerCase().toCharArray();
+    public boolean isFound(String pattern) { // Search if the pattern exist inside the text
+        char[] patternSearch;
+        char[] textSearch;
 
-        int[] prefixArrayOfPattern = computePrefixArray(pattern);
+        if(isLetterSensitive) {
+            patternSearch = pattern.toCharArray();
+            textSearch = TEXT.toCharArray();
+        } else {
+            patternSearch = pattern.toLowerCase().toCharArray();
+            textSearch = TEXT.toLowerCase().toCharArray();
+        }
+
+        this.prefixArrayOfPattern = computePrefixArray(patternSearch);
 
         int indexOfText = 0; // Index of Text table
         int indexOfPattern = 0; // Index of Pattern table
 
-        while(indexOfText < TEXT.length && indexOfPattern < pattern.length) {
-            if (TEXT[indexOfText] == pattern[indexOfPattern]) {
+        while(indexOfText < textSearch.length && indexOfPattern < patternSearch.length) {
+            if (textSearch[indexOfText] == patternSearch[indexOfPattern]) {
                 indexOfText++;
                 indexOfPattern++;
-                continue;
             } else {
                 if(indexOfPattern == 0) {
                   indexOfText++;
@@ -59,11 +82,48 @@ public class KMP {
                     indexOfPattern = prefixArrayOfPattern[indexOfPattern - 1];
                 }
             }
-
         }
 
-        return indexOfPattern == pattern.length;
+        return indexOfPattern == patternSearch.length;
 
+    }
+
+    public List<Integer> searchAndGetIndex(String pattern) { // Search and get List of Start Position
+        char[] patternSearch;
+        char[] textSearch;
+
+        if(isLetterSensitive) {
+            patternSearch = pattern.toCharArray();
+            textSearch = TEXT.toCharArray();
+        } else {
+            patternSearch = pattern.toLowerCase().toCharArray();
+            textSearch = TEXT.toLowerCase().toCharArray();
+        }
+
+        List<Integer> foundIndex = new LinkedList<>();
+
+        int indexOfText = 0; // Index of Text table
+        int indexOfPattern = 0; // Index of Pattern table
+
+        while(indexOfText < textSearch.length) {
+            if (textSearch[indexOfText] == patternSearch[indexOfPattern]) {
+                indexOfText++;
+                indexOfPattern++;
+            } else {
+                if(indexOfPattern == 0) {
+                    indexOfText++;
+                } else {
+                    indexOfPattern = prefixArrayOfPattern[indexOfPattern - 1];
+                }
+            }
+
+            if(indexOfPattern == patternSearch.length) { // if found add the index in the list of foundIndex
+                foundIndex.add(indexOfText - indexOfPattern);
+                indexOfPattern = 0;
+            }
+        }
+
+        return foundIndex;
     }
 
     /* Additional Methods */
