@@ -1,7 +1,7 @@
 package com.houarizegai.math.egyptian_multiplication;
 
 public class EgyptianMultiplicationDemo {
-
+    // complexity of this algorithm is : O(log(n))
     private static int getMul(int a, int b) { // Calc multiplication (Get A * B)
         int result = 0;
         while(b >= 1) {

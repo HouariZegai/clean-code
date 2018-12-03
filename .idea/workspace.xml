@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c8e749-117e-457f-96ad-85e670d617bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/EgyptianMultiplicationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/EgyptianMultiplicationDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,12 +65,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="318" />
+          <entry key="java" value="386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="318" />
+          <entry key="JAVA" value="386" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -79,16 +79,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/EgyptianMultiplicationDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/EgyptianMultiplicationDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="54">
+              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/CaptureDemo.PNG">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/CaptureDemo.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -120,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/com/houarizegai/math/EgyptianMultiplication.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/EgyptianMultiplication.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/EgyptianMultiplicationDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/EgyptianMultiplicationDemo.java" />
       </list>
     </option>
   </component>
@@ -166,7 +167,7 @@
               <item name="algorithms-implementation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="houarizegai" type="462c0819:PsiDirectoryNode" />
-              <item name="egyptian_math" type="462c0819:PsiDirectoryNode" />
+              <item name="egyptian_multiplication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,7 +179,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543861287307" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543861665120" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -256,18 +257,18 @@
       <workItem from="1541709928726" duration="546000" />
       <workItem from="1541711468692" duration="3462000" />
       <workItem from="1541758377471" duration="4174000" />
-      <workItem from="1543860250409" duration="899000" />
+      <workItem from="1543860250409" duration="1381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15729000" />
+    <option name="totallyTimeSpent" value="16211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16868381" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16868381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,7 +277,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33606556" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33606556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,13 +327,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/CaptureDemo.PNG">
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/CaptureDemo.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_math/EgyptianMultiplicationDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/math/egyptian_multiplication/EgyptianMultiplicationDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="54">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
