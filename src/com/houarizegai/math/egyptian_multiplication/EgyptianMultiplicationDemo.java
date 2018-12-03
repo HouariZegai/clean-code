@@ -1,4 +1,4 @@
-package com.houarizegai.math.egyptian_math;
+package com.houarizegai.math.egyptian_multiplication;
 
 public class EgyptianMultiplicationDemo {
 
