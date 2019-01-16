@@ -1,4 +1,4 @@
-package com.houarizegai.dfs;
+package com.houarizegai.graph.dfs;
 
 public class AdjList {
     private Node head;
