@@ -17,7 +17,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 9. Decorator
 10. [Facade](structural/facade)
 11. [Flyweight](structural/flyweight)
-12. Proxy
+12. [Proxy](structural/proxy)
 #### Behavioural
 13. Chain of Responsibility
 14. Command
