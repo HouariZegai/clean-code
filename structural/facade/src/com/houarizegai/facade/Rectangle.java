@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.facade;
+package com.houarizegai.facade;
 
 public class Rectangle implements Shape {
     @Override

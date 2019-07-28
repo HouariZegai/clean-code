@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.flyweight;
+package com.houarizegai.flyweight;
 
 public class Circle implements Shape {
     private String color; // color of circle

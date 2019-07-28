@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.prototype;
+package com.houarizegai.prototype;
 
 public class Rectangle extends Shape {
 

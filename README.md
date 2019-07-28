@@ -1,17 +1,44 @@
 # Design patterns in Java
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/HouariZegai/Design-Patterns-in-Java/master/LICENSE)
-
 Design patterns are solutions to recurring problems and are formalized best practices that the programmer can use to solve common problems when designing an application.
 
-## Design patterns added
-<ol>
-  <li>Builder</li>
-	<li>Facade</li>
-	<li>Factory</li>
-	<li>Flyweight</li>
-	<li>Prototype</li>
-	<li>Singleton</li>
-</ol>
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Installation
-* Clone the project ```git clone https://github.com/HouariZegai/Design-Patterns-in-Java.git```
+### Design patterns
+#### Creational
+1. Abstract Factory
+2. [Builder](creational/builder)
+3. [Factory](creational/factory)
+4. [Prototype](creational/prototype)
+5. [Singleton](creational/singleton)
+#### Structural
+6. Adapter
+7. Bridge
+8. Composite
+9. Decorator
+10. [Facade](structural/facade)
+11. [Flyweight](structural/flyweight)
+12. Proxy
+#### Behavioural
+13. Chain of Responsibility
+14. Command
+15. Interepter
+16. Iterator
+17. Mediator
+18. Memento
+19. Observer
+20. State
+21. Strategy
+22. Template method
+23. Visitor
+
+### Installation 🔌
+1. Press the **Fork** button (top right the page) to save copy of this project on your account.
+2. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
+
+       git clone https://github.com/HouariZegai/Design-Patterns-in-Java.git
+3. Import the project in Intellij IDEA or any other IDE.
+4. Run the application :D
+
+### Contributing 💡
+If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
+If you find any issue just put it in the repository issue section, thank you.

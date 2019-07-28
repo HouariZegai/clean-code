@@ -12,7 +12,7 @@
 
 */
 
-package com.houarizegai.designpatterns.flyweight;
+package com.houarizegai.flyweight;
 
 public class FlyweightDemo {
     private final static String[] colors = {"Black", "White", "Red", "Green", "Blue"};

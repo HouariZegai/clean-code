@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.prototype;
+package com.houarizegai.prototype;
 
 public abstract class Shape implements Cloneable {
     private String id;

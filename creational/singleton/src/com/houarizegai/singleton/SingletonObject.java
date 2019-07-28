@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.singleton;
+package com.houarizegai.singleton;
 
 public class SingletonObject { // This class create only one object
     private static SingletonObject singletonObject;

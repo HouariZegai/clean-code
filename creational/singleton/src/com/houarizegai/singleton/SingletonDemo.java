@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.singleton;
+package com.houarizegai.singleton;
 
 public class SingletonDemo {
     public static void main(String[] args) {

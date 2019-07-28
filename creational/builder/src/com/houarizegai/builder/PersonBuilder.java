@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.builder;
+package com.houarizegai.builder;
 
 public class PersonBuilder {
     private String firstName;

@@ -1,4 +1,4 @@
-package com.houarizegai.designpatterns.flyweight;
+package com.houarizegai.flyweight;
 
 public interface Shape {
     public void draw();
