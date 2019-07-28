@@ -35,7 +35,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 1. Press the **Fork** button (top right the page) to save copy of this project on your account.
 2. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
-       git clone https://github.com/HouariZegai/Design-Patterns-in-Java.git
+       git clone https://github.com/HouariZegai/DesignPatterns.git
 3. Import the project in Intellij IDEA or any other IDE.
 4. Run the application :D
 
