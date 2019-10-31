@@ -1,4 +1,4 @@
-package main.java.com.houarizegai.datastructure.array;
+package com.houarizegai.datastructure.array.simple;
 
 public class SimpleArray {
     public static void main(String[] args) {
