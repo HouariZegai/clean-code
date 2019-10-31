@@ -34,4 +34,11 @@ Should i choose Linked List or Array List?
 * Fixed element number => ArrayList
 * Insert one time and a lot of access => ArrayList
 
- 
+#### Stack (All types)
+| Complexity | Value |
+|:------:|:---------:|
+| Access | O(n) |
+| Search | O(n) |
+| Insert | O(1) |
+| Delete | O(1) |
+| Space  | O(n) |
