@@ -1,6 +1,6 @@
-package com.houarizegai.datastructure.queue;
+package com.houarizegai.datastructure.queue.queuearray;
 
-public class QueueDemo {
+public class QueueArrayDemo {
     public static void main(String[] args) {
         arrayQueueDemo();
     }

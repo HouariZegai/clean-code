@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.stack;
+package com.houarizegai.datastructure.stack.linkedliststack;
 
 public class Node<T> {
     private T value;

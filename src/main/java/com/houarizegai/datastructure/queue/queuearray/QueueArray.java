@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.queue;
+package com.houarizegai.datastructure.queue.queuearray;
 
 import java.util.NoSuchElementException;
 
