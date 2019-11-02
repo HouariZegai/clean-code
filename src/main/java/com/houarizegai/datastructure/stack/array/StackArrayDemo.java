@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.stack.arraystack;
+package com.houarizegai.datastructure.stack.array;
 
 public class StackArrayDemo {
     public static void main(String[] args) {

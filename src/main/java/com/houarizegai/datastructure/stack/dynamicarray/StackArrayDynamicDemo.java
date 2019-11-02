@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.stack.dynamicarraystack;
+package com.houarizegai.datastructure.stack.dynamicarray;
 
 public class StackArrayDynamicDemo {
     public static void main(String[] args) {

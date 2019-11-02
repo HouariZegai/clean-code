@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.stack.dynamicarraystack;
+package com.houarizegai.datastructure.stack.dynamicarray;
 
 import java.util.Arrays;
 

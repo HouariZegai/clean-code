@@ -1,4 +1,4 @@
-package com.houarizegai.datastructure.stack.arraystack;
+package com.houarizegai.datastructure.stack.array;
 
 public class StackArray<T> {
     private int size;
