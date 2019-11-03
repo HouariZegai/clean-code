@@ -1,4 +1,4 @@
-package com.houarizegai.algorithms.search.linearsearch;
+package com.houarizegai.algorithms.search.linear;
 
 import com.houarizegai.algorithms.search.Utils;
 

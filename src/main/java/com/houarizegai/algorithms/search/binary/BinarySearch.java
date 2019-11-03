@@ -1,4 +1,4 @@
-package com.houarizegai.algorithms.search.binarysearch;
+package com.houarizegai.algorithms.search.binary;
 
 import com.houarizegai.algorithms.search.Utils;
 
