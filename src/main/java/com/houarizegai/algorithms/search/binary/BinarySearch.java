@@ -1,6 +1,6 @@
 package com.houarizegai.algorithms.search.binary;
 
-import com.houarizegai.algorithms.search.Utils;
+import com.houarizegai.algorithms.Utils;
 
 public class BinarySearch {
     public static void main(String[] args) {

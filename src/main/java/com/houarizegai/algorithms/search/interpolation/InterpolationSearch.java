@@ -1,6 +1,6 @@
 package com.houarizegai.algorithms.search.interpolation;
 
-import com.houarizegai.algorithms.search.Utils;
+import com.houarizegai.algorithms.Utils;
 
 public class InterpolationSearch {
     public static void main(String[] args) {

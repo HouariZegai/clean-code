@@ -36,6 +36,7 @@
   * [Interpolation Search](src/main/java/com/houarizegai/algorithms/search/interpolation)    
   * [KMP (pattern search)](src/main/java/com/houarizegai/algorithms/search/kmp)
 * [Sort](src/main/java/com/houarizegai/algorithms/sort)
-  * [Merge sort](src/main/java/com/houarizegai/algorithms/sort/mergesort)
+  * [Bubble Sort](src/main/java/com/houarizegai/algorithms/sort/bubblesort)
+  * [Merge Sort](src/main/java/com/houarizegai/algorithms/sort/mergesort)
 * [Recursion](src/main/java/com/houarizegai/algorithms/recursion)
 * [Egyptian Multiplication](src/main/java/com/houarizegai/algorithms/egyptian_multiplication)

@@ -1,6 +1,6 @@
 package com.houarizegai.algorithms.search.linear;
 
-import com.houarizegai.algorithms.search.Utils;
+import com.houarizegai.algorithms.Utils;
 
 public class LinearSearch {
     public static void main(String[] args) {

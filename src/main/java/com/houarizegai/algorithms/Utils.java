@@ -1,4 +1,4 @@
-package com.houarizegai.algorithms.search;
+package com.houarizegai.algorithms;
 
 import java.util.Random;
 
