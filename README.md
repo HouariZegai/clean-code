@@ -21,6 +21,8 @@
 * [Queue](src/main/java/com/houarizegai/datastructure/queue)
   * [Array Queue](src/main/java/com/houarizegai/datastructure/queue/array)
   * [LinkedList Queue](src/main/java/com/houarizegai/datastructure/queue/linkedlist)
+* [Hash Table (using Array)](src/main/java/com/houarizegai/datastructure/hashtable)
+* [Refresh Collections (pre-defined data structures)](src/main/java/com/houarizegai/datastructure/collections)
 
 * **[Data Structures Complexity](src/main/java/com/houarizegai/datastructure)**
 

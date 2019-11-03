@@ -51,3 +51,12 @@ Should i choose Linked List or Array List?
 | Insert | O(1) |
 | Delete | O(1) |
 | Space  | O(n) |
+
+#### Hash Table
+| Complexity | Value |
+|:------:|:---------:|
+| Access | O(n) |
+| Search | O(n) |
+| Insert | O(n) |
+| Delete | O(n) |
+| Space  | O(n * m) |
