@@ -3,4 +3,6 @@
 #### Search
 | Algorithm | Complexity |
 |:---:|:---:|
-| Linear Search (brute Force) | O(n) |
+| Linear Search | O(n) |
+| Binary Search | O(log(n)) |
+| KMP (Pattern search) | O(n+m) |
