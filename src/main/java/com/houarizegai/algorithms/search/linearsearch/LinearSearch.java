@@ -2,17 +2,22 @@ package com.houarizegai.algorithms.search.linearsearch;
 
 import com.houarizegai.algorithms.search.Utils;
 
-public class LinearSearch { // brute force
+public class LinearSearch {
     public static void main(String[] args) {
-        int[] numbers = Utils.generateRandomTable(10, 20);
-        Utils.displayTable(numbers);
+        int[] array = Utils.generateRandomTable(10, 20);
+        Utils.displayTable(array);
 
-        int target = 10; // search number
-        for(int i = 0; i < numbers.length; i++) {
-            if(numbers[i] == target) {
-                System.out.println("Found it at position: " + i);
-                break;
-            }
+        System.out.println(10 + ":" + linearSearch(array, 10));
+        System.out.println(15 + ":" + linearSearch(array, 15));
+        System.out.println(0 + ":" + linearSearch(array, 0));
+
+    }
+
+    private static boolean linearSearch(int[] array, int target) {
+        for(int i = 0; i < array.length; i++) { // brute force
+            if(array[i] == target)
+                return true;
         }
+        return false;
     }
 }

@@ -1,4 +1,4 @@
-package com.houarizegai.string.kmp;
+package com.houarizegai.algorithms.search.kmp;
 
 import java.util.LinkedList;
 import java.util.List;
