@@ -5,7 +5,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 
 ### Design patterns
 #### Creational
-1. Abstract Factory
+1. [Abstract Factory](creational/abstract-factory)
 2. [Builder](creational/builder)
 3. [Factory](creational/factory)
 4. [Prototype](creational/prototype)
@@ -36,7 +36,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 2. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
        git clone https://github.com/HouariZegai/Design-Patterns-in-Java.git
-3. Import the project in Intellij IDEA or any other IDE.
+3. Import the project in Intellij IDEA or any other Java IDE.
 4. Run the application :D
 
 ### Contributing 💡
