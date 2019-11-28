@@ -13,7 +13,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 #### Structural
 6. [Adapter](structural/adapter)
 7. Bridge
-8. Composite
+8. [Composite](structural/composite)
 9. Decorator
 10. [Facade](structural/facade)
 11. [Flyweight](structural/flyweight)
