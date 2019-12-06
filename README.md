@@ -25,7 +25,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 16. Iterator
 17. Mediator
 18. Memento
-19. Observer
+19. [Observer](behavioural/observer)
 20. State
 21. Strategy
 22. Template method
