@@ -12,7 +12,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 5. [Singleton](creational/singleton)
 #### Structural
 6. [Adapter](structural/adapter)
-7. Bridge
+7. [Bridge](structural/bridge)
 8. [Composite](structural/composite)
 9. [Decorator](structural/decorator)
 10. [Facade](structural/facade)
