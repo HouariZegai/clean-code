@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public class TvDevice extends EntertainmentDevice {
 
     public TvDevice(int deviceState, int maxSetting) {

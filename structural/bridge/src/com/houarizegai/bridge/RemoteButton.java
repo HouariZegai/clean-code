@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public abstract class RemoteButton {
 
     private EntertainmentDevice device;

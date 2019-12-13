@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public class BridgeDemo { // Test the Remote
 
     public static void main(String[] args) {

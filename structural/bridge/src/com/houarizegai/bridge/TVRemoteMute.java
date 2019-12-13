@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public class TVRemoteMute extends RemoteButton {
 
     public TVRemoteMute(EntertainmentDevice device) {

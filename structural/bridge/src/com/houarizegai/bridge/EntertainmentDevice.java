@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public abstract class EntertainmentDevice {
     private int deviceState;
     private int maxSetting;

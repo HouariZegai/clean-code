@@ -1,3 +1,5 @@
+package com.houarizegai.bridge;
+
 public class TVRemotePause extends RemoteButton {
 
     public TVRemotePause(EntertainmentDevice device) {
