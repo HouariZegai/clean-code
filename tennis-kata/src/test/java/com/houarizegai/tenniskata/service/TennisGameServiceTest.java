@@ -112,7 +112,7 @@ public class TennisGameServiceTest {
         playersWins(5, 4);
         String score = tennisGameService.getScore();
 
-        assertEquals(firstPlayerName + " Player Advantage", score);
+        assertEquals(firstPlayerName + " Advantage", score);
     }
 
     @Test
@@ -120,7 +120,7 @@ public class TennisGameServiceTest {
         playersWins(3, 4);
         String score = tennisGameService.getScore();
 
-        assertEquals(secondPlayerName + " Player Advantage", score);
+        assertEquals(secondPlayerName + " Advantage", score);
     }
 
     private void playersWins(int firstPlayerTimes, int secondPlayerTimes) {
