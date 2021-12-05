@@ -9,6 +9,9 @@ import java.util.Map;
 @Service
 public class TennisGameServiceImpl implements TennisGameService {
 
+    private final String firstPlayerName;
+    private final String secondPlayerName;
+
     private int firstPlayerScore;
     private int secondPlayerScore;
 
@@ -19,6 +22,11 @@ public class TennisGameServiceImpl implements TennisGameService {
         SCORES.put(1, "Fifteen");
         SCORES.put(2, "Thirty");
         SCORES.put(3, "Forty");
+    }
+
+    public TennisGameServiceImpl(String firstPlayerName, String secondPlayerName) {
+        this.firstPlayerName = firstPlayerName;
+        this.secondPlayerName = secondPlayerName;
     }
 
     @Override
@@ -33,13 +41,13 @@ public class TennisGameServiceImpl implements TennisGameService {
 
         if(firstPlayerScore > 3) {
             if(firstPlayerScore - secondPlayerScore == 1) {
-                return "First Player Advantage";
+                return firstPlayerName + " Player Advantage";
             }
         }
 
         if(secondPlayerScore > 3) {
             if(secondPlayerScore - firstPlayerScore == 1) {
-                return "Second Player Advantage";
+                return secondPlayerName + " Player Advantage";
             }
         }
 

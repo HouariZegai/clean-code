@@ -13,9 +13,12 @@ public class TennisGameServiceTest {
 
     private TennisGameService tennisGameService;
 
+    private final String firstPlayerName = "Houari";
+    private final String secondPlayerName = "Mohamed";
+
     @BeforeEach
     public void setup() {
-        tennisGameService = new TennisGameServiceImpl();
+        tennisGameService = new TennisGameServiceImpl(firstPlayerName, secondPlayerName);
     }
 
     @Test
@@ -109,7 +112,7 @@ public class TennisGameServiceTest {
         playersWins(5, 4);
         String score = tennisGameService.getScore();
 
-        assertEquals("First Player Advantage", score);
+        assertEquals(firstPlayerName + " Player Advantage", score);
     }
 
     @Test
@@ -117,7 +120,7 @@ public class TennisGameServiceTest {
         playersWins(3, 4);
         String score = tennisGameService.getScore();
 
-        assertEquals("Second Player Advantage", score);
+        assertEquals(secondPlayerName + " Player Advantage", score);
     }
 
     private void playersWins(int firstPlayerTimes, int secondPlayerTimes) {
