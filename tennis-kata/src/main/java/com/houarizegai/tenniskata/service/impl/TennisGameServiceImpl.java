@@ -15,6 +15,7 @@ public class TennisGameServiceImpl implements TennisGameService {
     private static final Map<Integer, String> SCORES = new HashMap<>();
 
     static {
+        SCORES.put(0, "Love");
         SCORES.put(1, "Fifteen");
         SCORES.put(2, "Thirty");
         SCORES.put(3, "Forty");
@@ -26,11 +27,7 @@ public class TennisGameServiceImpl implements TennisGameService {
             return "Love All";
         }
 
-        if(secondPlayerScore == 1) {
-            return "Love Fifteen";
-        }
-
-        return SCORES.get(firstPlayerScore) + " Love";
+        return SCORES.get(firstPlayerScore) + " " + SCORES.get(secondPlayerScore);
     }
 
     @Override
