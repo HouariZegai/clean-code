@@ -49,8 +49,11 @@ public class TennisGameServiceTest {
     }
 
     @Test
-    private void secondPlayerWinsFirstBall() {
+    public void secondPlayerWinsFirstBall() {
         tennisGameService.secondPlayerWin();
+        String score = tennisGameService.getScore();
+
+        assertEquals("Love Fifteen", score);
     }
 
     private void firstPlayerWins(int times) {
