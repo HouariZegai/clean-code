@@ -24,6 +24,10 @@ public class TennisGameServiceImpl implements TennisGameService {
     @Override
     public String getScore() {
         if(firstPlayerScore == secondPlayerScore) {
+            if(firstPlayerScore == 1) {
+                return "Fifteen All";
+            }
+
             if(firstPlayerScore == 3) {
                 return "Deuce";
             }
