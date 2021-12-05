@@ -73,14 +73,6 @@ public class TennisGameServiceTest {
     }
 
     @Test
-    public void playersAreDeuce3x3() {
-        playersWins(3, 3);
-        String score = tennisGameService.getScore();
-
-        assertEquals("Deuce", score);
-    }
-
-    @Test
     public void bothPlayersWinsOneBall() {
         playersWins(1, 1);
         String score = tennisGameService.getScore();
@@ -94,6 +86,14 @@ public class TennisGameServiceTest {
         String score = tennisGameService.getScore();
 
         assertEquals("Thirty All", score);
+    }
+
+    @Test
+    public void playersAreDeuce3x3() {
+        playersWins(3, 3);
+        String score = tennisGameService.getScore();
+
+        assertEquals("Deuce", score);
     }
 
     @Test
