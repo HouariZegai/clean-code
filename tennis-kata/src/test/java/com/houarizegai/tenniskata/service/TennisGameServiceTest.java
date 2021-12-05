@@ -7,6 +7,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 public class TennisGameServiceTest {
 
     public void shouldReturnLoveAll() {
-        TennisgameService tennisGameService = new TennisGameService();
+        TennisGameService tennisGameService = new TennisGameService();
     }
 }
