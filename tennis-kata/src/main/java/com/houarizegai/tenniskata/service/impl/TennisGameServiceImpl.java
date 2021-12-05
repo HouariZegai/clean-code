@@ -31,4 +31,8 @@ public class TennisGameServiceImpl implements TennisGameService {
     public void firstPlayerWin() {
         firstPlayerScore++;
     }
+
+    @Override
+    public void secondPlayerWin() {
+    }
 }
