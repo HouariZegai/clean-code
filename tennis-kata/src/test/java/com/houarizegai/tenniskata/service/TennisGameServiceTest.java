@@ -80,6 +80,14 @@ public class TennisGameServiceTest {
         assertEquals("Deuce", score);
     }
 
+    @Test
+    public void bothPlayersWinsOneBall() {
+        playersWins(1, 1);
+        String score = tennisGameService.getScore();
+
+        assertEquals("Fifteen All", score);
+    }
+
     private void playersWins(int firstPlayerTimes, int secondPlayerTimes) {
         for(int i = 0; i < firstPlayerTimes; i++) {
             tennisGameService.firstPlayerWin();
