@@ -26,7 +26,7 @@ public class TennisGameServiceTest {
 
     @Test
     public void firstPlayerWinsFirstBall() {
-        tennisGameService.firstPlayerWin();
+        firstPlayerWins(1);
         String score = tennisGameService.getScore();
 
         assertEquals("Fifteen Love", score);
@@ -34,8 +34,7 @@ public class TennisGameServiceTest {
 
     @Test
     public void firstPlayerWinsTwoBall() {
-        tennisGameService.firstPlayerWin();
-        tennisGameService.firstPlayerWin();
+        firstPlayerWins(2);
         String score = tennisGameService.getScore();
 
         assertEquals("Thirty Love", score);
@@ -43,11 +42,15 @@ public class TennisGameServiceTest {
 
     @Test
     public void firstPlayerWinsThreeBall() {
-        tennisGameService.firstPlayerWin();
-        tennisGameService.firstPlayerWin();
-        tennisGameService.firstPlayerWin();
+        firstPlayerWins(3);
         String score = tennisGameService.getScore();
 
         assertEquals("Forty Love", score);
+    }
+
+    private void firstPlayerWins(int times) {
+        for(int i = 0; i < times; i++) {
+            tennisGameService.firstPlayerWin();
+        }
     }
 }
