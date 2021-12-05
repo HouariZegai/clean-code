@@ -40,13 +40,13 @@ public class TennisGameServiceImpl implements TennisGameService {
         }
 
         if(firstPlayerScore > 3) {
-            if(firstPlayerScore - secondPlayerScore == 1) {
+            if(Math.abs(firstPlayerScore - secondPlayerScore) == 1) {
                 return firstPlayerName + " Player Advantage";
             }
         }
 
         if(secondPlayerScore > 3) {
-            if(secondPlayerScore - firstPlayerScore == 1) {
+            if(Math.abs(firstPlayerScore - secondPlayerScore) == 1) {
                 return secondPlayerName + " Player Advantage";
             }
         }
