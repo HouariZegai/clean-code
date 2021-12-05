@@ -40,4 +40,14 @@ public class TennisGameServiceTest {
 
         assertEquals("Thirty Love", score);
     }
+
+    @Test
+    public void firstPlayerWinsThreeBall() {
+        tennisGameService.firstPlayerWin();
+        tennisGameService.firstPlayerWin();
+        tennisGameService.firstPlayerWin();
+        String score = tennisGameService.getScore();
+
+        assertEquals("Forty Love", score);
+    }
 }
