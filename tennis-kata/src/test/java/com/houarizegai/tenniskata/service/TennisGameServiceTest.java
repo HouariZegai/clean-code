@@ -26,5 +26,6 @@ public class TennisGameServiceTest {
 
     @Test
     public void firstPlayerWinsFirstBall() {
+        tennisGameService.firstPlayerWin();
     }
 }
