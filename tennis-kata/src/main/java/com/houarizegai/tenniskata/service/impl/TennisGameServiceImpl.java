@@ -10,6 +10,8 @@ import java.util.Map;
 public class TennisGameServiceImpl implements TennisGameService {
 
     private int firstPlayerScore;
+    private int secondPlayerScore;
+
     private static final Map<Integer, String> SCORES = new HashMap<>();
 
     static {
@@ -20,8 +22,12 @@ public class TennisGameServiceImpl implements TennisGameService {
 
     @Override
     public String getScore() {
-        if(firstPlayerScore == 0) {
+        if(firstPlayerScore == secondPlayerScore) {
             return "Love All";
+        }
+
+        if(secondPlayerScore == 1) {
+            return "Love Fifteen";
         }
 
         return SCORES.get(firstPlayerScore) + " Love";
@@ -34,5 +40,6 @@ public class TennisGameServiceImpl implements TennisGameService {
 
     @Override
     public void secondPlayerWin() {
+        secondPlayerScore++;
     }
 }
