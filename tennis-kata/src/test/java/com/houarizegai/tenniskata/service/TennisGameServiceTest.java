@@ -8,5 +8,6 @@ public class TennisGameServiceTest {
 
     public void shouldReturnLoveAll() {
         TennisGameService tennisGameService = new TennisGameService();
+        String score = tennisGameService.getScore();
     }
 }
