@@ -13,6 +13,9 @@ public class TennisGameServiceImpl implements TennisGameService {
         if(firstPlayerScore == 1) {
             return "Fifteen Love";
         }
+        if(firstPlayerScore == 2) {
+            return "Thirty Love";
+        }
 
         return "Love All";
     }
