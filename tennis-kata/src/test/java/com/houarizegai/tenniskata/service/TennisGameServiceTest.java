@@ -27,5 +27,8 @@ public class TennisGameServiceTest {
     @Test
     public void firstPlayerWinsFirstBall() {
         tennisGameService.firstPlayerWin();
+        String score = tennisGameService.getScore();
+
+        assertEquals("Fifteen Love", score);
     }
 }
