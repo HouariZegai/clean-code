@@ -53,6 +53,10 @@ public class TennisGameServiceImpl implements TennisGameService {
             if(Math.abs(firstPlayerScore - secondPlayerScore) == 1) {
                 return secondPlayerName + " Advantage";
             }
+
+            if(Math.abs(firstPlayerScore - secondPlayerScore) == 2) {
+                return secondPlayerName + " Win";
+            }
         }
 
         return SCORES.get(firstPlayerScore) + " " + SCORES.get(secondPlayerScore);
