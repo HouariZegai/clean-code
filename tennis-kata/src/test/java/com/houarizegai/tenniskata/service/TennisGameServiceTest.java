@@ -131,6 +131,14 @@ public class TennisGameServiceTest {
         assertEquals(firstPlayerName + " Win", score);
     }
 
+    @Test
+    public void secondPlayerWinTheGame() {
+        playersWins(3, 5);
+        String score = tennisGameService.getScore();
+
+        assertEquals(secondPlayerName + " Win", score);
+    }
+
     private void playersWins(int firstPlayerTimes, int secondPlayerTimes) {
         for(int i = 0; i < firstPlayerTimes; i++) {
             tennisGameService.firstPlayerWin();
