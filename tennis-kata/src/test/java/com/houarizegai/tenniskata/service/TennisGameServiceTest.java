@@ -48,6 +48,11 @@ public class TennisGameServiceTest {
         assertEquals("Forty Love", score);
     }
 
+    @Test
+    private void secondPlayerWinsFirstBall() {
+        tennisGameService.secondPlayerWin();
+    }
+
     private void firstPlayerWins(int times) {
         for(int i = 0; i < times; i++) {
             tennisGameService.firstPlayerWin();
