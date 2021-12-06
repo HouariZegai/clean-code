@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  tennis-kata:
+    image: tennis-kata:latest
+    container_name: tennis-game
+    ports:
+      - 8080:8080
