@@ -1,8 +1,8 @@
-package com.houarizegai.tenniskata.model;
+package com.houarizegai.tenniskata.model.dto;
 
 import javax.validation.constraints.NotBlank;
 
-public record InitGame(
+public record InitGameDto(
         @NotBlank(message = "First player name is required")
         String firstPlayerName,
 
