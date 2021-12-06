@@ -1,15 +1,14 @@
 package com.houarizegai.tenniskata.service;
 
+import com.houarizegai.tenniskata.model.Player;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class TennisGame {
 
-    private final String firstPlayerName;
-    private final String secondPlayerName;
-
-    private int firstPlayerScore;
-    private int secondPlayerScore;
+    private final Player firstPlayer;
+    private final Player secondPlayer;
 
     private static final Map<Integer, String> SCORES = new HashMap<>();
 
@@ -21,8 +20,8 @@ public class TennisGame {
     }
 
     public TennisGame(String firstPlayerName, String secondPlayerName) {
-        this.firstPlayerName = firstPlayerName;
-        this.secondPlayerName = secondPlayerName;
+        firstPlayer = Player.builder().name(firstPlayerName).build();
+        secondPlayer = Player.builder().name(secondPlayerName).build();
     }
 
     public String getScore() {
@@ -30,13 +29,13 @@ public class TennisGame {
             return "Deuce";
         }
 
-        if(firstPlayerScore == secondPlayerScore) {
-            return SCORES.get(firstPlayerScore) + " All";
+        if(firstPlayer.getScore() == secondPlayer.getScore()) {
+            return SCORES.get(firstPlayer.getScore()) + " All";
         }
 
         String highestPlayerName = getHighestPlayer();
 
-        if(firstPlayerScore > 3 || secondPlayerScore > 3) {
+        if(firstPlayer.getScore() > 3 || secondPlayer.getScore() > 3) {
             if(hasAdvantage()) {
                 return highestPlayerName + " Advantage";
             }
@@ -46,30 +45,38 @@ public class TennisGame {
             }
         }
 
-        return SCORES.get(firstPlayerScore) + " " + SCORES.get(secondPlayerScore);
+        return SCORES.get(firstPlayer.getScore()) + " " + SCORES.get(secondPlayer.getScore());
     }
 
     public void firstPlayerWin() {
-        firstPlayerScore++;
+        firstPlayer.setScore(firstPlayer.getScore() + 1);
     }
 
     public void secondPlayerWin() {
-        secondPlayerScore++;
+        secondPlayer.setScore(secondPlayer.getScore() + 1);
     }
 
     private boolean isDeuce() {
-        return firstPlayerScore == secondPlayerScore && firstPlayerScore >= 3;
+        return firstPlayer.getScore() == secondPlayer.getScore() && firstPlayer.getScore() >= 3;
     }
 
     private boolean hasAdvantage() {
-        return Math.abs(firstPlayerScore - secondPlayerScore) == 1;
+        return Math.abs(firstPlayer.getScore() - secondPlayer.getScore()) == 1;
     }
 
     private boolean hasWinner() {
-        return Math.abs(firstPlayerScore - secondPlayerScore) == 2;
+        return Math.abs(firstPlayer.getScore() - secondPlayer.getScore()) == 2;
     }
 
     private String getHighestPlayer() {
-        return firstPlayerScore > secondPlayerScore ? firstPlayerName : secondPlayerName;
+        return firstPlayer.getScore() > secondPlayer.getScore() ? firstPlayer.getName() : secondPlayer.getName();
+    }
+
+    public Player getFirstPlayer() {
+        return firstPlayer;
+    }
+
+    public Player getSecondPlayer() {
+        return secondPlayer;
     }
 }
