@@ -1,14 +1,12 @@
 package com.houarizegai.tenniskata.service.impl;
 
-import com.houarizegai.tenniskata.exception.GameNotInitializedException;
+import com.houarizegai.tenniskata.exception.GameNotInitException;
 import com.houarizegai.tenniskata.model.dto.GameScoreDto;
 import com.houarizegai.tenniskata.model.dto.InitGameDto;
 import com.houarizegai.tenniskata.model.dto.RecordWinDto;
 import com.houarizegai.tenniskata.service.TennisGame;
 import com.houarizegai.tenniskata.service.TennisGameService;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class TennisGameServiceImpl implements TennisGameService {
@@ -22,6 +20,8 @@ public class TennisGameServiceImpl implements TennisGameService {
 
     @Override
     public void recordScore(RecordWinDto recordWinDto) {
+        assertGameInitialized();
+
         for (int i = 0; i < recordWinDto.firstPlayerWin(); i++) {
             tennisGame.firstPlayerWin();
         }
@@ -32,9 +32,14 @@ public class TennisGameServiceImpl implements TennisGameService {
 
     @Override
     public GameScoreDto getScore() {
-        TennisGame tennisGame = Optional.ofNullable(this.tennisGame)
-                .orElseThrow(GameNotInitializedException::new);
+        assertGameInitialized();
 
         return new GameScoreDto(tennisGame.getFirstPlayer(), tennisGame.getSecondPlayer(), tennisGame.getScore());
+    }
+
+    private void assertGameInitialized() {
+        if (tennisGame == null) {
+            throw new GameNotInitException("Game is not initialized");
+        }
     }
 }
