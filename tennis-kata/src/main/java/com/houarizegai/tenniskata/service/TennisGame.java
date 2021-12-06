@@ -1,13 +1,11 @@
-package com.houarizegai.tenniskata.service.impl;
+package com.houarizegai.tenniskata.service;
 
-import com.houarizegai.tenniskata.service.TennisGameService;
-import org.springframework.stereotype.Service;
+import com.houarizegai.tenniskata.model.TennisGameScore;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
-public class TennisGameServiceImpl implements TennisGameService {
+public class TennisGame {
 
     private final String firstPlayerName;
     private final String secondPlayerName;
@@ -24,12 +22,11 @@ public class TennisGameServiceImpl implements TennisGameService {
         SCORES.put(3, "Forty");
     }
 
-    public TennisGameServiceImpl(String firstPlayerName, String secondPlayerName) {
+    public TennisGame(String firstPlayerName, String secondPlayerName) {
         this.firstPlayerName = firstPlayerName;
         this.secondPlayerName = secondPlayerName;
     }
 
-    @Override
     public String getScore() {
         if(isDeuce()) {
             return "Deuce";
@@ -54,12 +51,10 @@ public class TennisGameServiceImpl implements TennisGameService {
         return SCORES.get(firstPlayerScore) + " " + SCORES.get(secondPlayerScore);
     }
 
-    @Override
     public void firstPlayerWin() {
         firstPlayerScore++;
     }
 
-    @Override
     public void secondPlayerWin() {
         secondPlayerScore++;
     }
