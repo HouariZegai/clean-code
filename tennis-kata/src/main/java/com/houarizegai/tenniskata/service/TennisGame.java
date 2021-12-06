@@ -1,7 +1,5 @@
 package com.houarizegai.tenniskata.service;
 
-import com.houarizegai.tenniskata.model.TennisGameScore;
-
 import java.util.HashMap;
 import java.util.Map;
 
