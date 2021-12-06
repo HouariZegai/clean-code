@@ -31,22 +31,22 @@ public class TennisGameServiceImpl implements TennisGameService {
 
     @Override
     public String getScore() {
-        if(firstPlayerScore == secondPlayerScore) {
-            if(firstPlayerScore >= 3) {
-                return "Deuce";
-            }
+        if(isDeuce()) {
+            return "Deuce";
+        }
 
+        if(firstPlayerScore == secondPlayerScore) {
             return SCORES.get(firstPlayerScore) + " All";
         }
 
         String highestPlayerName = getHighestPlayer();
 
         if(firstPlayerScore > 3 || secondPlayerScore > 3) {
-            if(Math.abs(firstPlayerScore - secondPlayerScore) == 1) {
+            if(hasAdvantage()) {
                 return highestPlayerName + " Advantage";
             }
 
-            if(Math.abs(firstPlayerScore - secondPlayerScore) == 2) {
+            if(hasWinner()) {
                 return highestPlayerName + " Win";
             }
         }
@@ -62,6 +62,18 @@ public class TennisGameServiceImpl implements TennisGameService {
     @Override
     public void secondPlayerWin() {
         secondPlayerScore++;
+    }
+
+    private boolean isDeuce() {
+        return firstPlayerScore == secondPlayerScore && firstPlayerScore >= 3;
+    }
+
+    private boolean hasAdvantage() {
+        return Math.abs(firstPlayerScore - secondPlayerScore) == 1;
+    }
+
+    private boolean hasWinner() {
+        return Math.abs(firstPlayerScore - secondPlayerScore) == 2;
     }
 
     private String getHighestPlayer() {
