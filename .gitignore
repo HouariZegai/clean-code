@@ -1,4 +1,7 @@
 # Intellij
-*/*/*.idea
+*/*/.idea
 */*/out
 */*/*.iml
+
+# Maven
+*/*/target
