@@ -1,3 +1,5 @@
+package com.houarizegai.designpatterns.observer;
+
 import java.util.ArrayList;
 
 public class StockGrabber implements Subject {

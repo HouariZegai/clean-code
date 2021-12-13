@@ -1,6 +1,11 @@
-public class ObserverDemo { // Grab stocks
+package com.houarizegai.designpatterns.observer;
 
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+class ObserverTest {
+
+    @Test
+    public void testObserver() {
         StockGrabber stockGrabber = new StockGrabber();
 
         StockObserver observer1 = new StockObserver(stockGrabber);
