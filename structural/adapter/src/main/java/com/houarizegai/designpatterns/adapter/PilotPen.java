@@ -1,4 +1,4 @@
-package com.houarizegai.adapter;
+package com.houarizegai.designpatterns.adapter;
 
 public class PilotPen {
 
