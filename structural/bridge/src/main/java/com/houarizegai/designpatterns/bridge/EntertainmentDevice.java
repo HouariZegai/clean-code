@@ -1,4 +1,4 @@
-package com.houarizegai.bridge;
+package com.houarizegai.designpatterns.bridge;
 
 public abstract class EntertainmentDevice {
     private int deviceState;

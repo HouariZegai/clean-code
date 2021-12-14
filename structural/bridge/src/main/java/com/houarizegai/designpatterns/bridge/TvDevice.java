@@ -1,4 +1,4 @@
-package com.houarizegai.bridge;
+package com.houarizegai.designpatterns.bridge;
 
 public class TvDevice extends EntertainmentDevice {
 

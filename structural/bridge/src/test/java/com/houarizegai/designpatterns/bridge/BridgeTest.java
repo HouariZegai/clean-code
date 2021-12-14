@@ -1,8 +1,11 @@
-package com.houarizegai.bridge;
+package com.houarizegai.designpatterns.bridge;
 
-public class BridgeDemo { // Test the Remote
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
+class BridgeTest {
+
+    @Test
+    public void testBridge() {
         RemoteButton tvRemote = new TVRemoteMute(new TvDevice(1, 120));
         RemoteButton tvRemote2 = new TVRemotePause(new TvDevice(1, 150));
 
@@ -18,4 +21,5 @@ public class BridgeDemo { // Test the Remote
         tvRemote2.onBtn9Pressed();
         tvRemote2.deviceFeedback();
     }
+
 }
