@@ -1,4 +1,4 @@
-package com.houarizegai.facade;
+package com.houarizegai.designpatterns.facade;
 
 public class ShapeMaker {
     private Shape circle;

@@ -9,7 +9,7 @@ calls to methods of existing system classes.
 
 */
 
-package com.houarizegai.facade;
+package com.houarizegai.designpatterns.facade;
 
 public class FacadeDemo {
     public static void main(String[] args) {
