@@ -1,4 +1,4 @@
-package com.houarizegai.proxy;
+package com.houarizegai.designpatterns.proxy;
 
 import java.util.Arrays;
 import java.util.List;

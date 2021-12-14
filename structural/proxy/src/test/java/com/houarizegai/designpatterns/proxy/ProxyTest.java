@@ -1,11 +1,14 @@
-package com.houarizegai.proxy;
+package com.houarizegai.designpatterns.proxy;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Client {
+class ProxyTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void clientTest() {
         List<String> sites = Arrays.asList("facebook", "github", "quora", "stackoverflow", "twitter", "youtube");
 
         ISP intenet = new InternetProxy();

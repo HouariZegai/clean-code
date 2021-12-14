@@ -1,4 +1,4 @@
-package com.houarizegai.proxy;
+package com.houarizegai.designpatterns.proxy;
 
 public class Telecom implements ISP {
 
