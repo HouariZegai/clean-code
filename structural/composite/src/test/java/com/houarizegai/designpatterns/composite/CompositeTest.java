@@ -1,7 +1,11 @@
-package com.houarizegai.composite;
+package com.houarizegai.designpatterns.composite;
 
-public class CompositeDemo {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+class CompositeTest {
+
+    @Test
+    public void testComposite() {
         Component hdd = new Leaf("Hard Drive", 6000);
         Component mouse = new Leaf("Mouse", 500);
         Component monitor = new Leaf("Monitor", 8000);

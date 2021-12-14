@@ -1,4 +1,4 @@
-package com.houarizegai.composite;
+package com.houarizegai.designpatterns.composite;
 
 import java.util.ArrayList;
 import java.util.List;
