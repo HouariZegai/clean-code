@@ -1,10 +1,14 @@
-package com.houarizegai.abstractfactory;
+package com.houarizegai.designpatterns.abstractfactory;
 
-public class AbstractFactoryPatternDemo {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+class AbstractFactoryPatternTest {
+
+    @Test
+    public void testAbstractFactory() {
         // Get shape factory
         AbstractFactory shapeFactory = FactoryProducer.getFactory("shape");
-        // Get an object of shape circle
+        // Get shape circle object
         Shape shape1 = shapeFactory.getShape("circle");
         shape1.draw();
 
@@ -24,7 +28,5 @@ public class AbstractFactoryPatternDemo {
 
         Color color3 = colorFactory.getColor("green");
         color3.fill();
-
-
     }
 }

@@ -1,4 +1,4 @@
-package com.houarizegai.abstractfactory;
+package com.houarizegai.designpatterns.abstractfactory;
 
 public class ShapeFactory extends AbstractFactory {
     @Override

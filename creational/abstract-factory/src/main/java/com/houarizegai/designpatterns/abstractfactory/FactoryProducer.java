@@ -1,4 +1,4 @@
-package com.houarizegai.abstractfactory;
+package com.houarizegai.designpatterns.abstractfactory;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory(String choice) {
