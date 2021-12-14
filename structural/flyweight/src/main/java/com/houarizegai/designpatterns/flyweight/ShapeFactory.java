@@ -1,4 +1,4 @@
-package com.houarizegai.flyweight;
+package com.houarizegai.designpatterns.flyweight;
 
 import java.util.HashMap;
 
