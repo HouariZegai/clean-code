@@ -1,4 +1,4 @@
-package com.houarizegai.prototype;
+package com.houarizegai.designpatterns.prototype;
 
 import java.util.Hashtable;
 

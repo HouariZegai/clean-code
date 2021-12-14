@@ -1,4 +1,4 @@
-package com.houarizegai.prototype;
+package com.houarizegai.designpatterns.prototype;
 
 public class Circle extends Shape {
 
@@ -7,6 +7,6 @@ public class Circle extends Shape {
     }
     @Override
     public void draw() {
-        System.out.println("Draw Circle !");
+        System.out.println("Draw Circle!");
     }
 }

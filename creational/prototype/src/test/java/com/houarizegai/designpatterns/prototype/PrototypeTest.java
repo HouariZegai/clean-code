@@ -1,7 +1,11 @@
-package com.houarizegai.prototype;
+package com.houarizegai.designpatterns.prototype;
 
-public class PrototypeDemo {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+class PrototypeTest {
+
+    @Test
+    public void testPrototype() {
         ShapeCache.loadCache();
 
         Shape cloneCircle = (Shape) ShapeCache.getShape("1");
@@ -12,6 +16,5 @@ public class PrototypeDemo {
 
         Shape cloneRectangle = (Shape) ShapeCache.getShape("3");
         cloneRectangle.draw();
-
     }
 }

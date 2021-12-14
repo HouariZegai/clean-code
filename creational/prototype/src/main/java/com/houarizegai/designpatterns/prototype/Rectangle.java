@@ -1,4 +1,4 @@
-package com.houarizegai.prototype;
+package com.houarizegai.designpatterns.prototype;
 
 public class Rectangle extends Shape {
 
@@ -8,6 +8,6 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Draw Rectangle !");
+        System.out.println("Draw Rectangle!");
     }
 }

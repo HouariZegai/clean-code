@@ -1,4 +1,4 @@
-package com.houarizegai.prototype;
+package com.houarizegai.designpatterns.prototype;
 
 public class Square extends Shape {
 
@@ -8,6 +8,6 @@ public class Square extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Draw Square !");
+        System.out.println("Draw Square!");
     }
 }
