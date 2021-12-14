@@ -1,4 +1,4 @@
-package com.houarizegai.decorator;
+package com.houarizegai.designpatterns.decorator;
 
 public interface Sandwish {
     double getCost();

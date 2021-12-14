@@ -1,4 +1,4 @@
-package com.houarizegai.decorator;
+package com.houarizegai.designpatterns.decorator;
 
 public class Fool extends SandwichDecorator {
 
