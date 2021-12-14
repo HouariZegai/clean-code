@@ -1,20 +1,20 @@
-package com.houarizegai.factory;
+package com.houarizegai.designpatterns.factory;
 
-public class FactoryDemo {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+class FactoryTest {
+
+    @Test
+    public void testFactory() {
         ShapeFactory shapeFactory = new ShapeFactory();
 
-        // Create Circle shape
         Shape circle = shapeFactory.getShape("circle");
         circle.draw();
 
-        // Create Square shape
         Shape square  = shapeFactory.getShape("square");
         square.draw();
 
-        // Create Rectangle shape
         Shape rectangle = shapeFactory.getShape("rectangle");
         rectangle.draw();
-
     }
 }

@@ -1,4 +1,4 @@
-package com.houarizegai.factory;
+package com.houarizegai.designpatterns.factory;
 
 public class ShapeFactory {
 
