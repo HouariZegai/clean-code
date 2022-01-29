@@ -1,38 +1,25 @@
-public class Stack {
+public interface Stack {
+    boolean isEmpty();
 
-    private int capacity;
-    private int size;
-    private int[] elements;
+    void push(int element);
 
-    public Stack(int capacity) {
-        this.capacity = capacity;
-        this.elements = new int[this.capacity];
+    int getSize();
+
+    int pop();
+
+    int top();
+
+    int find(int element);
+
+    class Overflow extends RuntimeException {
     }
 
-    public boolean isEmpty() {
-        return size == 0;
+    class Underflow extends RuntimeException {
     }
 
-    public void push(int element) {
-        if(size == capacity)
-            throw new Overflow();
-
-        elements[size++] = element;
+    class IllegalCapacity extends RuntimeException {
     }
 
-    public int getSize() {
-        return size;
-    }
-
-    public int pop() {
-        if(size == 0)
-            throw new Underflow();
-        return elements[--size];
-    }
-
-    public static class Overflow extends RuntimeException {
-    }
-
-    public static class Underflow extends RuntimeException {
+    class Empty extends RuntimeException {
     }
 }
