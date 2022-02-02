@@ -1,10 +1,20 @@
-# Clean Code
+<h1 align="center">Clean Code</h1>
+<p align="center">Implemented with :heart: in <b>Java</b></p>
 
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+<p align="center">
+  <a href="https://github.com/HouariZegai/clean-code/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </a>
+  <a href="https://www.java.com">
+    <img src="https://img.shields.io/badge/Java-17-red.svg">
+  </a>
+</p>
 
 ## Content
 * [Design Patterns](design-patterns)
 * [TDD Katas](katas)
+* [Data Structures](data-structures)
+* [Algorithms](algorithms)
 
 
 ### Installation 🔌
