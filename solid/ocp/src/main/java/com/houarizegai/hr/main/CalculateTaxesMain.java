@@ -4,7 +4,9 @@ import com.houarizegai.hr.logging.ConsoleLogger;
 import com.houarizegai.hr.persistence.EmployeeFileSerializer;
 import com.houarizegai.hr.persistence.EmployeeRepository;
 import com.houarizegai.hr.personnel.Employee;
+import com.houarizegai.hr.taxes.FullTimeTaxCalculator;
 import com.houarizegai.hr.taxes.TaxCalculator;
+import com.houarizegai.hr.taxes.TaxCalculatorFactory;
 
 import java.text.NumberFormat;
 import java.util.List;
@@ -23,10 +25,10 @@ public class CalculateTaxesMain {
         // Calculate taxes
         Locale locale = new Locale("en", "US");
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
-        TaxCalculator taxCalculator = new TaxCalculator();
 
         double totalTaxes = 0;
         for (Employee employee: employees){
+            TaxCalculator taxCalculator = TaxCalculatorFactory.create(employee);
 
             // compute individual tax
             double tax = taxCalculator.calculate(employee);
