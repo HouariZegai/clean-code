@@ -12,6 +12,7 @@
 
 ## Content
 * [Design Patterns](design-patterns)
+* [SOLID Principles](solid)
 * [TDD Katas](katas)
 * [Data Structures](data-structures)
 * [Algorithms](algorithms)
