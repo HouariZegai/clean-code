@@ -1,0 +1,8 @@
+#Business Requirement Document
+#Version 1.0
+
+Taxes for employees are calculated like this:
+
+- Fixed $100 amount for base health insurance
+- 16% income tax
+- 10% retirement tax

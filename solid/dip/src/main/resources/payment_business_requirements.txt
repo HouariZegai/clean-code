@@ -1,0 +1,11 @@
+#Business Requirement Document
+#Version 1.0
+
+We need a system that can retrieve all employees
+and pay their incomes.
+
+Upon completion, the total paid sum must be calculated in order
+to compare it with the finance department.
+
+Each employee should receive an email after the income payment
+was sent successfully.
