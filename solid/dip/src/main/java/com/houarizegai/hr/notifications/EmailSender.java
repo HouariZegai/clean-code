@@ -15,8 +15,10 @@ Email sender; To make it work you need to supply correct mail
 server data; The current configuration properties will not be
 valid.
  */
-public class EmailSender {
-    public static void notify(Employee employee){
+public class EmailSender implements EmployeeNotifer {
+
+    @Override
+    public void notify(Employee employee) {
         // Configure email server
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", true);
@@ -29,8 +31,8 @@ public class EmailSender {
             @Override
             protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(
-                        "5d205e8b9503f6",
-                        "969159ed0125ea");
+                        "6c407f4e0e9cd2",
+                        "ba9cab155f77a2");
             }
         });
 
@@ -56,11 +58,10 @@ public class EmailSender {
             message.setContent(multipart);
 
             // send and wait (mail server has limit)
-            Transport.send(message);
+//            Transport.send(message);
             System.out.println("Notified " + employee.getEmail());
-            Thread.sleep(3000);
-        }
-        catch (MessagingException e){
+            Thread.sleep(500);
+        } catch (MessagingException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -18,13 +18,15 @@ application we could use the database for persistence. In this demo,
 we are storing employees in the file system.
  */
 
-public class EmployeeFileRepository {
-    private EmployeeFileSerializer serializer;
+public class EmployeeFileRepository implements EmployeeRepository {
+
+    private final EmployeeFileSerializer serializer;
 
     public EmployeeFileRepository(EmployeeFileSerializer serializer) {
         this.serializer = serializer;
     }
 
+    @Override
     public List<Employee> findAll() {
         List<Employee> employees = new ArrayList<>();
 
@@ -50,6 +52,7 @@ public class EmployeeFileRepository {
         return employees;
     }
 
+    @Override
     public void save(Employee employee) throws IOException {
         String serializedString = this.serializer.serialize(employee);
 
@@ -58,7 +61,7 @@ public class EmployeeFileRepository {
         Files.write(path, serializedString.getBytes());
     }
 
-    private Employee createEmployeeFromCsvRecord(String line) {
+    public Employee createEmployeeFromCsvRecord(String line) {
         String[] employeeRecord = line.split(",");
         String name = employeeRecord[0];
         int income = Integer.parseInt(employeeRecord[1]);
