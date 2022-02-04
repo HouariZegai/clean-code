@@ -1,0 +1,11 @@
+#Business Requirement Document
+#Version 1.0
+
+The team needs to implement an exportable document: payslip.
+It should contain the following information:
+- month of income
+- name of employee
+- income of employee for the given month
+
+At the moment we just want to export as text but it
+might be possible to extend this to other formats.
