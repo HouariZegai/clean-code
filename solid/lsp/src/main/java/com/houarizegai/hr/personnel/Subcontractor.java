@@ -1,14 +1,14 @@
 package com.houarizegai.hr.personnel;
 
-public class Subcontractor extends Employee {
+public class Subcontractor {
 
-    public Subcontractor(String fullName, int monthlyIncome) {
-        super(fullName, monthlyIncome);
-    }
+    private String name;
+    private int monthlyIncome;
 
-    @Override
-    public void requestTimeOff(int nbDays, Employee manager) {
-        throw new RuntimeException("Not implemented");
+    public Subcontractor(String name, int monthlyIncome) {
+        setMonthlyIncome(monthlyIncome);
+
+        this.name = name;
     }
 
     public boolean approveSLA(ServiceLicenseAgreement sla) {
@@ -23,7 +23,23 @@ public class Subcontractor extends Employee {
             result=  true;
         }
 
-        System.out.println("SLA approval for " + this.getFullName() + ": " + result);
+        System.out.println("SLA approval for " + this.getName() + ": " + result);
         return result;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMonthlyIncome() {
+        return monthlyIncome;
+    }
+
+    public void setMonthlyIncome(int monthlyIncome) {
+        this.monthlyIncome = monthlyIncome;
     }
 }
