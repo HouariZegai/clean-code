@@ -3,10 +3,8 @@ package com.houarizegai.hr.documents;
 import com.houarizegai.hr.personnel.Employee;
 
 import java.time.Month;
-import java.util.Arrays;
-import java.util.List;
 
-public class Payslip implements ExportableDocument {
+public class Payslip implements ExportableText {
     private String employeeName;
     private int monthlyIncome;
     private Month month;
@@ -40,15 +38,5 @@ public class Payslip implements ExportableDocument {
         sb.append(System.lineSeparator());
 
         return sb.toString();
-    }
-
-    @Override
-    public byte[] toPdf() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public String toJson() {
-        throw new UnsupportedOperationException();
     }
 }

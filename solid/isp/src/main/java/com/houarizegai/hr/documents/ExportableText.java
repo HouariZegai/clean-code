@@ -4,8 +4,6 @@ package com.houarizegai.hr.documents;
 Common interface used in application when there is
 a need for document exports
  */
-public interface ExportableDocument {
+public interface ExportableText {
     String toTxt();
-    byte[] toPdf();
-    String toJson();
 }
