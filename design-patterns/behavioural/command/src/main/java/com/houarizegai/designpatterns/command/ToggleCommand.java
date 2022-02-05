@@ -1,15 +1,15 @@
 package com.houarizegai.designpatterns.command;
 
-public class CommandImpl implements Command {
+public class ToggleCommand implements Command {
 
     private Light light;
 
-    public CommandImpl(Light light) {
+    public ToggleCommand(Light light) {
         this.light = light;
     }
 
     @Override
     public void execute() {
-        light.on();
+        light.toggle();
     }
 }

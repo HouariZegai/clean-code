@@ -2,11 +2,25 @@ package com.houarizegai.designpatterns.command;
 
 public class Light {
 
-    public void on() {
+    private boolean isOn;
+
+    public void toggle() {
+        if(isOn) {
+            off();
+            isOn = false;
+        } else {
+            on();
+            isOn = true;
+        }
+    }
+
+    private void on() {
+        isOn = true;
         System.out.println("Light switched on.");
     }
 
-    public void off() {
+    private void off() {
+        isOn = false;
         System.out.println("Light switched off.");
     }
 }

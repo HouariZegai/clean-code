@@ -6,10 +6,12 @@ class CommandTest {
 
     @Test
     void testCommand() {
-        Light light = new Light(); // receiver
+        Light bedRoomLight = new Light(); // receiver
         Switch lightSwitch = new Switch(); // invoker
 
-        Command command = new CommandImpl(light);
+        Command command = new ToggleCommand(bedRoomLight);
+        lightSwitch.storeAndExecute(command);
+        lightSwitch.storeAndExecute(command);
         lightSwitch.storeAndExecute(command);
     }
 }
