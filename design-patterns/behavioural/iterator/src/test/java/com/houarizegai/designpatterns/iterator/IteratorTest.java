@@ -17,5 +17,8 @@ public class IteratorTest {
         while(iterator.hasNext())
             System.out.println(iterator.next());
 
+        for (String bike : bikeRepo) {
+            System.out.println(bike);
+        }
     }
 }
