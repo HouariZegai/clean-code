@@ -17,12 +17,12 @@ Design patterns are solutions to recurring problems and are formalized best prac
 11. [Flyweight](structural/flyweight)
 12. [Proxy](structural/proxy)
 #### Behavioural
-13. Chain of Responsibility
-14. Command
-15. Interepter
-16. Iterator
-17. Mediator
-18. Memento
+13. [Chain of Responsibility](behavioural/chain-of-responsability)
+14. [Command](behavioural/command)
+15. [Interepter](behavioural/interpreter)
+16. [Iterator](behavioural/iterator)
+17. [Mediator](behavioural/mediator)
+18. [Memento](behavioural/memento)
 19. [Observer](behavioural/observer)
 20. State
 21. Strategy
