@@ -1,7 +1,5 @@
 package com.houarizegai.designpatterns.strategy.everydaydemo;
 
-import com.houarizegai.designpatterns.strategy.everydaydemo.Person;
-
 import java.util.Collections;
 import java.util.List;
 
