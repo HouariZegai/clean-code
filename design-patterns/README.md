@@ -24,7 +24,7 @@ Design patterns are solutions to recurring problems and are formalized best prac
 17. [Mediator](behavioural/mediator)
 18. [Memento](behavioural/memento)
 19. [Observer](behavioural/observer)
-20. State
-21. Strategy
-22. Template method
-23. Visitor
+20. [State](behavioural/state)
+21. [Strategy](behavioural/strategy)
+22. [Template method](behavioural/template-method)
+23. [Visitor](behavioural/visitor)
